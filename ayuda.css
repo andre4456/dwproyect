@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ff8000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente (debajo del header) */
+    align-items: center; /* Centra el contenido horizontalmente */
+    min-height: 100vh; /* Hace que el body ocupe toda la altura de la ventana */
+  }
+  
+      /* Menú */
+  .header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed; /* Fija el menú en la parte superior */
+    top: 0; /* Coloca el menú en la parte superior */
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opcional: sombra para darle un efecto de profundidad */
+  }
+      .header .left-section {
+        display: flex;
+        align-items: center;
+      }
+      .header img {
+        height: 50px;
+      }
+      .header .search-box-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        margin: 0 20px;
+      }
+      .header .search-box {
+        position: relative;
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        align-items: center;
+      }
+      .header .search-box input {
+        flex: 1;
+        border: none;
+        padding: 5px;
+        outline: none;
+      }
+      .header .icon {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+      }
+      .header .icons {
+        display: flex;
+        align-items: center;
+      }
+      .header .menu-icon, .header .cart-icon, .header .user-icon {
+        margin: 0 10px;
+      }
+  
+      /* Menú lateral */
+      .menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        background-color: #FF7312;
+        padding: 20px;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+        z-index: 1000;
+      }
+      .menu .close-icon {
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        text-align: left;
+      }
+      .menu ul {
+        list-style: none;
+        padding: 0;
+      }
+      .menu ul li {
+        margin: 20px 0;
+      }
+      .menu ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+      }
+  
+      /* Contenedor principal */
+  .container {
+    display: flex;
+    background-color: #F2EFDD;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 900px;
+    height: 500px;
+    margin-top: 80px; /* Deja espacio debajo del menú fijo */
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-container, .gif-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+  
+      .quantity-controls {
+        background-color: #FF7312;
+        border-radius: 20px;
+        color: white;
+        padding: 10px 25px;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-left: auto;
+      }
+  
+      .question-text {
+        color: #ff8000;
+        transition: color 0.2s;
+      }
+  
+      .question-text:hover {
+        color: #C2AA27;
+        cursor: pointer;
+      }
+  
+      .input-container {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid black;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+        width: 100%;
+      }
+  
+      .input-container input,
+      .input-container textarea {
+        appearance: none;
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        color: black;
+        padding: 8px;
+        font-size: 16px;
+        resize: none; /* Evita cambiar el tamaño */
+        font-family: Arial, sans-serif;
+      }
+  
+      .input-container img {
+        width: 23px;
+        height: 18px;
+        margin-left: 8px;
+        border-radius: 10px;
+      }
+  
+      h4 {
+        margin-right: auto;
+        margin-bottom: 5px; /* Acerca el h4 al textarea */
+      }

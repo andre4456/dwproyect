@@ -1,0 +1,47 @@
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    // Alterna la propiedad display entre none y block
+    if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'block';
+    }
+}
+
+// Obtener todos los radio buttons y las promociones
+const radioButtons = document.querySelectorAll('input[type="radio"]');
+const promos = document.querySelectorAll('.welcome-flyer');
+
+// Agregar event listeners a los radio buttons
+radioButtons.forEach((radio, index) => {
+    radio.addEventListener('change', () => {
+        // Remover la clase active de todas las promociones
+        promos.forEach(promo => {
+            promo.classList.remove('active');
+        });
+        
+        // Agregar la clase active a la promoción seleccionada
+        promos[index].classList.add('active');
+    });
+});
+
+// Función para rotar automáticamente las promociones
+let currentIndex = 0;
+const autoRotate = () => {
+    currentIndex = (currentIndex + 1) % promos.length;
+    radioButtons[currentIndex].checked = true;
+    promos.forEach(promo => promo.classList.remove('active'));
+    promos[currentIndex].classList.add('active');
+};
+
+// Iniciar la rotación automática cada 5 segundos
+const intervalId = setInterval(autoRotate, 5000);
+
+// Detener la rotación automática cuando el usuario interactúa con los radio buttons
+radioButtons.forEach(radio => {
+    radio.addEventListener('change', () => {
+        clearInterval(intervalId);
+    });
+});
+    
+    

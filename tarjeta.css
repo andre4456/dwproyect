@@ -1,0 +1,154 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            background-color: #FF7312;
+            justify-content: center;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+        button {
+            background-color: #FF7312;
+            border-radius: 20px;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-left: auto;
+        }
+        button:hover {
+            background-color: #C2AA27;
+        }
+        alineacion{
+            text-align: center;
+            margin-right: auto;
+            margin-bottom: 5px; /* Acerca el h4 al textarea */
+        }
+        .form-container, .gif-container {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+          }
+          
+              img {
+                max-width: 100%;
+                height: auto;
+              }
+          
+              .quantity-controls {
+                background-color: #FF7312;
+                border-radius: 20px;
+                color: white;
+                padding: 10px 25px;
+                border: none;
+                cursor: pointer;
+                margin-top: 20px;
+                margin-left: auto;
+              }
+          
+              .question-text {
+                color: #ff8000;
+                transition: color 0.2s;
+              }
+          
+              .question-text:hover {
+                color: #C2AA27;
+                cursor: pointer;
+              }
+          
+              .input-container {
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid black;
+                padding-bottom: 5px;
+                margin-bottom: 20px;
+                width: 100%;
+              }
+          
+              .input-container input,
+              .input-container textarea {
+                appearance: none;
+                background-color: transparent;
+                border: none;
+                width: 100%;
+                color: black;
+                padding: 8px;
+                font-size: 16px;
+                resize: none; /* Evita cambiar el tamaño */
+                font-family: Arial, sans-serif;
+              }
+          
+              .input-container img {
+                width: 23px;
+                height: 18px;
+                margin-left: 8px;
+                border-radius: 5px;
+              }
+          
+              h2 {
+                margin-right: auto;
+                margin-bottom: 5px; /* Acerca el h4 al textarea */
+              }
+              .container {
+                display: flex;
+                background-color: #F2EFDD;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                width: 900px;
+                height: 600px;
+                margin-top: 5px;
+                padding: 20px;
+                justify-content: center;
+                align-items: center;
+              }
+
+    input[type="month"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+
+    /* Style for calendar icon */
+    #calendarIcon {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+    }
+
+    .input-container {
+      position: relative;
+    }
