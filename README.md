@@ -1,3 +1,5 @@
-
-            <button onclick="window.location.href='bienvenido.html'">ir a la pagina</button>
-       
+<html>
+            <ul>
+                        <li><a href="bienvenido.html">it a la pagina</a></li>
+            </ul>
+</html>
